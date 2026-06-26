@@ -35,7 +35,7 @@ function Footer() {
 
                         <div className="footer-copy">
 
-                            <p>Café Valenzuela © 2024</p>
+                            <p>Café Valenzuela © 2026</p>
 
                             <span>Todos os direitos reservados.</span>
 
