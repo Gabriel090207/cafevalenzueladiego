@@ -8,7 +8,7 @@ function Offer() {
 
     return (
 
-        <section className="offer">
+        <section id="beneficios" className="offer">
 
             <div className="container">
 

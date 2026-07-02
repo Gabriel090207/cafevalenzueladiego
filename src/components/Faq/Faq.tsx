@@ -15,7 +15,7 @@ function Faq() {
 
     return (
 
-        <section className="faq">
+        <section  id="perguntas" className="faq">
 
             <div className="container">
 

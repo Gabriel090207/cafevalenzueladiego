@@ -36,16 +36,55 @@
 
     position:relative;
 
-    left: -80px;
+    left:-80px;
 
     top:0;
+
+    opacity:0;
+
+    transform:translateX(-50px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+.about-coffee.animate .about-image img{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.about-image.animate img{
+
+    animation: aboutImageReveal .9s ease forwards;
 
 }
 
 .about-text{
 
-    width:  650px;
-    margin-left: -70px;
+    width:650px;
+
+    margin-left:-70px;
+
+    opacity:0;
+
+    transform:translateX(60px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+.about-coffee.animate .about-text{
+
+    opacity:1;
+
+    transform:translateX(0);
 
 }
 
@@ -112,6 +151,40 @@
     align-items:center;
 
     text-align:center;
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+
+}
+
+.about-coffee.animate .about-feature{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.about-coffee.animate .about-feature:nth-child(1){
+
+    transition-delay:.15s;
+
+}
+
+.about-coffee.animate .about-feature:nth-child(2){
+
+    transition-delay:.30s;
+
+}
+
+.about-coffee.animate .about-feature:nth-child(3){
+
+    transition-delay:.45s;
 
 }
 

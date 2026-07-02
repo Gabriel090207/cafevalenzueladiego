@@ -21,7 +21,7 @@ function Testimonials() {
 
     return (
 
-        <section className="testimonials">
+        <section id="depoimentos" className="testimonials">
 
             <div className="container">
 

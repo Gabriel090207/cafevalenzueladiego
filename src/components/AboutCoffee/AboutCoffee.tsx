@@ -1,5 +1,7 @@
 import "./AboutCoffee.css";
 
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
+
 import aboutCoffee from "../../assets/images/about/about-coffee.png";
 
 import fireIcon from "../../assets/images/about/icons/fire.png";
@@ -26,25 +28,31 @@ const features = [
 
 function AboutCoffee() {
 
+const section = useAnimateOnScroll<HTMLElement>();
+
+
+
     return (
 
-        <section className="about-coffee">
+       <section
+    ref={section.ref}
+    id="cafe"
+    className={`about-coffee ${section.animate ? "animate" : ""}`}
+>
 
             <div className="container">
 
                 <div className="about-content">
 
-                    <div className="about-image">
+                 <div className="about-image">
+    <img
+        src={aboutCoffee}
+        alt="Grãos de café"
+    />
 
-                        <img
-                            src={aboutCoffee}
-                            alt="Grãos de café"
-                        />
+</div>
 
-                    </div>
-
-                    <div className="about-text">
-
+                   <div className="about-text">
                         <span className="about-subtitle">
                             O Café Perfeito
                         </span>
@@ -84,6 +92,7 @@ function AboutCoffee() {
                         </div>
 
                     </div>
+
 
                 </div>
 

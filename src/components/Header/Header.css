@@ -1,5 +1,5 @@
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -46,14 +46,16 @@
 
     position: relative;
 
-    font-size: 0.93rem;
+    font-size: 0.88rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .3px;
 
     color: var(--color-text);
 
-    transition: var(--transition);
+    transition:
+    transform .65s cubic-bezier(.22, 1, .36, 1),
+    opacity .55s ease;
 
 }
 
@@ -69,7 +71,7 @@
 
 }
 
-.header-menu a.active::after {
+.header-menu a::after {
 
     content: "";
 
@@ -78,14 +80,30 @@
     left: 50%;
     bottom: -10px;
 
-    transform: translateX(-50%);
-
     width: 42px;
     height: 2px;
 
     border-radius: 999px;
 
     background: var(--color-primary);
+
+    transform: translateX(-50%) scaleX(0);
+
+    transform-origin: center;
+
+    opacity: 0;
+
+   transition:
+    color .55s ease,
+    opacity .55s ease;
+
+}
+
+.header-menu a.active::after {
+
+    transform: translateX(-50%) scaleX(1);
+
+    opacity: 1;
 
 }
 

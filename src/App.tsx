@@ -1,23 +1,30 @@
+import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import AboutCoffee from "./components/AboutCoffee/AboutCoffee";
-import Offer from "./components/Offer/Offer";
-import Testimonials from "./components/Testimonials/Testimonials";
-import Faq from "./components/Faq/Faq";
-import FeaturesBar from "./components/FeaturesBar/FeaturesBar";
 import Footer from "./components/Footer/Footer";
 
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+
 function App() {
+
+    useEffect(() => {
+
+        window.scrollTo(0, 0);
+
+    }, []);
+
     return (
         <>
             <Header />
-            <Hero />
-            <AboutCoffee />
-            <Offer />
-            <Testimonials />
-            <Faq />
-            <FeaturesBar />
-            <Footer/>
+
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/sobre" element={<About />} />
+            </Routes>
+
+            <Footer />
         </>
     );
 }

@@ -35,7 +35,7 @@ function Footer() {
 
                         <div className="footer-copy">
 
-                            <p>Café Valenzuela © 2026</p>
+                            <p>Café Valenzuela © {new Date().getFullYear()}</p>
 
                             <span>Todos os direitos reservados.</span>
 

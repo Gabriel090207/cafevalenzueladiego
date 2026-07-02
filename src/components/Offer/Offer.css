@@ -215,12 +215,18 @@ CARD
     cursor:pointer;
 
     transition:.3s;
+    transform: translateY(0);
+
 
 }
 
 .offer-card button:hover{
 
-    filter:brightness(1.05);
+    filter: brightness(1.08);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 16px 35px rgba(214, 155, 45, 0.45);
 
 }
 
