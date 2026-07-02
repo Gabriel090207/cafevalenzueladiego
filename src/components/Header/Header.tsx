@@ -197,9 +197,10 @@ useEffect(() => {
             <aside className={`mobile-sidebar ${menuOpen ? "open" : ""}`}>
 
                 <button
-                    className="sidebar-close"
-                    onClick={() => setMenuOpen(false)}
-                >
+    className="sidebar-close"
+    onClick={() => setMenuOpen(false)}
+    aria-label="Fechar menu"
+>
 
                     <X size={30} />
 

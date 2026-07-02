@@ -51,15 +51,27 @@ function Footer() {
 
                         <div className="payment-icons">
 
-                            <FaCcVisa />
+    <FaCcVisa
+        aria-label="Visa"
+        title="Visa"
+    />
 
-                            <FaCcMastercard />
+    <FaCcMastercard
+        aria-label="Mastercard"
+        title="Mastercard"
+    />
 
-                            <SiPix />
+    <SiPix
+        aria-label="Pix"
+        title="Pix"
+    />
 
-                            <BsReceipt />
+    <BsReceipt
+        aria-label="Boleto Bancário"
+        title="Boleto Bancário"
+    />
 
-                        </div>
+</div>
 
                     </div>
 
@@ -71,25 +83,28 @@ function Footer() {
 
                         <div className="social-icons">
 
-                            <a href="#">
+    <a
+        href="#"
+        aria-label="Instagram do Café Valenzuela"
+    >
+        <FaInstagram />
+    </a>
 
-                                <FaInstagram />
+    <a
+        href="#"
+        aria-label="Facebook do Café Valenzuela"
+    >
+        <FaFacebookF />
+    </a>
 
-                            </a>
+    <a
+        href="#"
+        aria-label="WhatsApp do Café Valenzuela"
+    >
+        <FaWhatsapp />
+    </a>
 
-                            <a href="#">
-
-                                <FaFacebookF />
-
-                            </a>
-
-                            <a href="#">
-
-                                <FaWhatsapp />
-
-                            </a>
-
-                        </div>
+</div>
 
                     </div>
 
