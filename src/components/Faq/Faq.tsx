@@ -6,7 +6,7 @@ import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
 import { ChevronDown } from "lucide-react";
 
-import faqCoffee from "../../assets/images/faq/faq-coffee.png";
+import faqCoffee from "../../assets/images/faq/faq-coffee.webp";
 
 
 const questions = [

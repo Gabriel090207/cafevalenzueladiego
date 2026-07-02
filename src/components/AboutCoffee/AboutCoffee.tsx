@@ -2,11 +2,11 @@ import "./AboutCoffee.css";
 
 import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
-import aboutCoffee from "../../assets/images/about/about-coffee.png";
+import aboutCoffee from "../../assets/images/about/about-coffee.webp";
 
-import fireIcon from "../../assets/images/about/icons/fire.png";
-import balanceIcon from "../../assets/images/about/icons/balance.png";
-import aromaIcon from "../../assets/images/about/icons/aroma.png";
+import fireIcon from "../../assets/images/about/icons/fire.webp";
+import balanceIcon from "../../assets/images/about/icons/balance.webp";
+import aromaIcon from "../../assets/images/about/icons/aroma.webp";
 
 const features = [
     {

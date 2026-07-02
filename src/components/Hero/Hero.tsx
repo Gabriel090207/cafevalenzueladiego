@@ -9,10 +9,10 @@ const heroContent = {
         "Grãos selecionados e torra artesanal para proporcionar a experiência perfeita em cada xícara.",
 };
 
-import coffeeBean from "../../assets/images/icons/coffee-bean.png";
-import leaf from "../../assets/images/icons/leaf.png";
-import coffeeCup from "../../assets/images/icons/coffee-cup.png";
-import mountain from "../../assets/images/icons/mountain.png";
+import coffeeBean from "../../assets/images/icons/coffee-bean.webp";
+import leaf from "../../assets/images/icons/leaf.webp";
+import coffeeCup from "../../assets/images/icons/coffee-cup.webp";
+import mountain from "../../assets/images/icons/mountain.webp";
 
 const heroFeatures = [
     {
