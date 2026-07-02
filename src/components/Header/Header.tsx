@@ -146,9 +146,10 @@ useEffect(() => {
                     {/* Botão Mobile */}
 
                     <button
-                        className="header-mobile"
-                        onClick={() => setMenuOpen(true)}
-                    >
+    className="header-mobile"
+    onClick={() => setMenuOpen(true)}
+    aria-label="Abrir menu de navegação"
+>
 
                         <GiCoffeeCup size={38} />
 

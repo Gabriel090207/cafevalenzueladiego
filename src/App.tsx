@@ -16,17 +16,19 @@ function App() {
     }, []);
 
     return (
-        <>
-            <Header />
+    <>
+        <Header />
 
+        <main>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/sobre" element={<About />} />
             </Routes>
+        </main>
 
-            <Footer />
-        </>
-    );
+        <Footer />
+    </>
+);
 }
 
 export default App;
