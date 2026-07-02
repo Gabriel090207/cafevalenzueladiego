@@ -1,4 +1,6 @@
 import "./Testimonials.css";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
+
 
 import { Star } from "lucide-react";
 
@@ -18,10 +20,15 @@ const testimonials = [
 ];
 
 function Testimonials() {
+const section = useAnimateOnScroll<HTMLElement>();
 
     return (
 
-        <section id="depoimentos" className="testimonials">
+       <section
+    ref={section.ref}
+    id="depoimentos"
+    className={`testimonials ${section.animate ? "animate" : ""}`}
+>
 
             <div className="container">
 

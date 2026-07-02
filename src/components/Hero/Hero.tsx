@@ -1,7 +1,7 @@
 import "./Hero.css";
 
-import logo from "../../assets/images/hero/logo.png";
-import heroProduct from "../../assets/images/hero/hero-product.png";
+import logo from "../../assets/images/hero/logo.webp";
+import heroProduct from "../../assets/images/hero/hero-product.webp";
 
 const heroContent = {
     title: "SABOR QUE ENCANTA,\nQUALIDADE QUE VOCÊ SENTE.",

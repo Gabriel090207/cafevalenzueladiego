@@ -268,3 +268,94 @@ CELULARES PEQUENOS
     }
 
 }
+
+
+/* ==========================================
+   TESTIMONIALS - ANIMAÇÕES
+========================================== */
+
+/* ---------- Título ---------- */
+
+.testimonials-title{
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.testimonials.animate .testimonials-title{
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+/* ---------- Cards ---------- */
+
+.testimonial-card{
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.testimonials.animate .testimonial-card{
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+.testimonials.animate .testimonial-card:nth-child(1){
+
+    transition-delay: .15s;
+
+}
+
+.testimonials.animate .testimonial-card:nth-child(2){
+
+    transition-delay: .30s;
+
+}
+
+.testimonials.animate .testimonial-card:nth-child(3){
+
+    transition-delay: .45s;
+
+}
+
+/* ---------- Bolinhas ---------- */
+
+.testimonial-dots{
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+    transition-delay: .55s;
+
+}
+
+.testimonials.animate .testimonial-dots{
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}

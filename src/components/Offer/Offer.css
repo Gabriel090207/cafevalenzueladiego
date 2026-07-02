@@ -471,3 +471,76 @@ CELULARES PEQUENOS
     }
 
 }
+
+
+/* ==========================================
+   OFFER - ANIMAÇÕES
+========================================== */
+
+/* ---------- Produto ---------- */
+
+.offer-image img{
+
+    opacity: 0;
+
+    transform: translateX(-50px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+.offer.animate .offer-image img{
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+/* ---------- Informações ---------- */
+
+.offer-info{
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+.offer.animate .offer-info{
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+/* ---------- Card ---------- */
+
+.offer-card{
+
+    opacity: 0;
+
+    transform: translateX(60px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+    transition-delay: .25s;
+
+}
+
+.offer.animate .offer-card{
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}

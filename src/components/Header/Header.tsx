@@ -159,7 +159,7 @@ useEffect(() => {
 
                     <ul className="header-menu">
 
-                        {menuItems.map((item, index) => (
+                        {menuItems.map((item) => (
 
     <li key={item.id}>
 

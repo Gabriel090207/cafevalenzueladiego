@@ -1,6 +1,6 @@
 .faq{
 
-    padding: 95px 0 0px;
+    padding: 95px 0 20px;
 
     background:var(--color-background);
 
@@ -47,6 +47,7 @@
 .faq-item{
 
     height:56px;
+    width:100%;
 
     padding:0 18px;
 
@@ -79,6 +80,15 @@
 .faq-item svg{
 
     color:var(--color-text);
+
+    transition:
+        transform .35s ease;
+
+}
+
+.faq-item svg.rotate{
+
+    transform:rotate(180deg);
 
 }
 
@@ -245,3 +255,174 @@ CELULARES PEQUENOS
     }
 
 }
+
+
+/* ==========================================
+   FAQ - ANIMAÇÕES
+========================================== */
+
+/* ---------- Título ---------- */
+
+.faq-title{
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.faq.animate .faq-title{
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+/* ---------- Perguntas ---------- */
+
+.faq-item{
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.faq.animate .faq-item{
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+.faq.animate .faq-item:nth-child(1){
+
+    transition-delay: .10s;
+
+}
+
+.faq.animate .faq-item:nth-child(2){
+
+    transition-delay: .20s;
+
+}
+
+.faq.animate .faq-item:nth-child(3){
+
+    transition-delay: .30s;
+
+}
+
+.faq.animate .faq-item:nth-child(4){
+
+    transition-delay: .40s;
+
+}
+
+/* ---------- Imagem ---------- */
+
+.faq-image img{
+
+    opacity: 0;
+
+    transform: translateX(60px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+.faq.animate .faq-image img{
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+
+
+
+.faq-box{
+
+    width:100%;
+
+}
+
+
+/* ==========================================
+   RESPOSTA FAQ
+========================================== */
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    padding:0 20px;
+
+    background:#171717;
+
+    border-left:1px solid rgba(214,155,45,.18);
+
+    border-right:1px solid rgba(214,155,45,.18);
+
+    border-bottom:1px solid rgba(214,155,45,.18);
+
+    border-radius:0 0 8px 8px;
+
+    transition:
+        max-height .35s ease,
+        opacity .35s ease,
+        padding .35s ease;
+
+}
+
+.faq-answer.open{
+
+    max-height: 280px;
+
+    opacity:1;
+
+    padding:18px 20px;
+
+}
+
+.faq-answer p{
+
+    color:var(--color-text-secondary);
+
+    font-size:.82rem;
+
+    line-height:1.8;
+
+}
+
+.faq-item.active{
+
+    border-color:rgba(214,155,45,.45);
+
+    border-bottom-left-radius:0;
+
+    border-bottom-right-radius:0;
+
+}
+
+
+
+
+
+

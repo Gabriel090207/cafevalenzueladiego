@@ -1,21 +1,51 @@
+import { useState } from "react";
+
+
 import "./Faq.css";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 
 import { ChevronDown } from "lucide-react";
 
 import faqCoffee from "../../assets/images/faq/faq-coffee.png";
 
+
 const questions = [
-    "Quais são as formas de pagamento?",
-    "Qual o prazo de entrega?",
-    "O café é torrado e enviado fresco?",
-    "Posso moer o café antes do envio?",
+    {
+        question: "Quais são as formas de pagamento?",
+        answer:
+            "Aceitamos Pix, cartão de crédito em até 12x sem juros e boleto bancário.",
+    },
+    {
+        question: "Qual o prazo de entrega?",
+        answer:
+            "O prazo varia conforme a sua região, levando entre 3 e 10 dias úteis.",
+    },
+    {
+        question: "O café é torrado e enviado fresco?",
+        answer:
+            "Sim. Trabalhamos com torra artesanal para garantir máximo aroma, sabor e frescor.",
+    },
+    {
+        question: "Posso receber o café já moído?",
+        answer:
+            "Sim. Você pode escolher receber o café em grãos ou moído.",
+    },
 ];
 
 function Faq() {
 
+const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+
+const section = useAnimateOnScroll<HTMLElement>();
+
     return (
 
-        <section  id="perguntas" className="faq">
+        <section
+    ref={section.ref}
+    id="perguntas"
+    className={`faq ${section.animate ? "animate" : ""}`}
+>
 
             <div className="container">
 
@@ -27,41 +57,54 @@ function Faq() {
 
                 <div className="faq-content">
 
-                    <div className="faq-questions">
+                   <div className="faq-questions">
 
-                        <button className="faq-item">
+    {questions.map((item, index) => (
 
-                            <span>{questions[0]}</span>
+      <div
+    key={index}
+    className="faq-box"
+>
 
-                            <ChevronDown size={18} />
+    <button
+        className={`faq-item ${openIndex === index ? "active" : ""}`}
+        onClick={() =>
+            setOpenIndex(
+                openIndex === index
+                    ? null
+                    : index
+            )
+        }
+    >
 
-                        </button>
+        <span>{item.question}</span>
 
-                        <button className="faq-item">
+        <ChevronDown
+    size={18}
+    className={openIndex === index ? "rotate" : ""}
+/>
 
-                            <span>{questions[1]}</span>
+    </button>
 
-                            <ChevronDown size={18} />
+   <div
+    className={`faq-answer ${
+        openIndex === index ? "open" : ""
+    }`}
+>
 
-                        </button>
+    <p>
 
-                        <button className="faq-item">
+        {item.answer}
 
-                            <span>{questions[2]}</span>
+    </p>
 
-                            <ChevronDown size={18} />
+</div>
 
-                        </button>
+</div>
 
-                        <button className="faq-item">
+    ))}
 
-                            <span>{questions[3]}</span>
-
-                            <ChevronDown size={18} />
-
-                        </button>
-
-                    </div>
+</div>
 
                     <div className="faq-image">
 
@@ -83,3 +126,5 @@ function Faq() {
 }
 
 export default Faq;
+
+

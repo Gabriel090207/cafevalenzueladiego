@@ -1,4 +1,6 @@
 import "./Offer.css";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
+
 
 import { ShoppingCart, Lock, Check } from "lucide-react";
 
@@ -6,9 +8,15 @@ import offerProduct from "../../assets/images/offer/offer-product.png";
 
 function Offer() {
 
+const section = useAnimateOnScroll<HTMLElement>();
+
     return (
 
-        <section id="beneficios" className="offer">
+        <section
+    ref={section.ref}
+    id="beneficios"
+    className={`offer ${section.animate ? "animate" : ""}`}
+>
 
             <div className="container">
 
