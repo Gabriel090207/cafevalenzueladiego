@@ -49,10 +49,13 @@ function Hero() {
                     <div className="hero-left">
 
                         <img
-                            src={logo}
-                            alt="Logo Café Valenzuela"
-                            className="hero-logo"
-                        />
+    src={logo}
+    alt="Logo Café Valenzuela"
+    className="hero-logo"
+    loading="eager"
+    fetchPriority="high"
+    decoding="async"
+/>
 
                         <h1 className="hero-title">
                             {heroContent.title}
@@ -67,10 +70,13 @@ function Hero() {
                     <div className="hero-right">
 
                         <img
-                            src={heroProduct}
-                            alt="Café Valenzuela"
-                            className="hero-product"
-                        />
+    src={heroProduct}
+    alt="Café Valenzuela"
+    className="hero-product"
+    loading="eager"
+    fetchPriority="high"
+    decoding="async"
+/>
 
                     </div>
 
