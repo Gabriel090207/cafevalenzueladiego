@@ -98,8 +98,18 @@ const handleScrollToSection = (id: string) => {
     setMenuOpen(false);
 
 };
-
 useEffect(() => {
+
+    // Se estiver na página Sobre,
+    // mantém o menu Sobre ativo.
+    if (location.pathname === "/sobre") {
+
+        setActiveSection("sobre");
+
+        return;
+
+    }
+
     const handleScroll = () => {
 
         const sections = document.querySelectorAll<HTMLElement>("section[id]");
@@ -133,7 +143,7 @@ useEffect(() => {
         window.removeEventListener("scroll", handleScroll);
     };
 
-}, []);
+}, [location.pathname]);
 
     return (
 

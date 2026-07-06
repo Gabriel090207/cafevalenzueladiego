@@ -1,0 +1,408 @@
+.about-quality{
+
+    padding: 140px 0;
+
+    background:var(--color-background);
+
+    overflow:hidden;
+
+}
+
+.about-quality-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+/* ==========================
+   TEXTO
+========================== */
+
+.about-quality-text{
+
+    position:relative;
+
+    width:560px;
+
+    top:0;
+
+    left:0;
+
+    flex-shrink:0;
+
+    opacity:0;
+
+    transform:translateX(-60px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+.about-quality.animate .about-quality-text{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.about-quality-subtitle{
+
+    display:inline-block;
+
+    margin-bottom:35px;
+
+    color:var(--color-primary);
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+.about-quality-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+.about-quality-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    transition:transform .35s ease;
+
+}
+
+.about-quality-item:hover{
+
+    transform:translateX(10px);
+
+}
+
+.about-quality-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:34px;
+
+    height:34px;
+
+    flex-shrink:0;
+
+    color:var(--color-primary);
+
+    border:1px solid rgba(214,155,45,.30);
+
+    border-radius:50%;
+
+    transition:
+        background .35s ease,
+        border-color .35s ease,
+        transform .35s ease;
+
+}
+
+.about-quality-item:hover .about-quality-icon{
+
+    background:rgba(214,155,45,.08);
+
+    border-color:var(--color-primary);
+
+    transform:scale(1.08);
+
+}
+
+.about-quality-item h3{
+
+    margin-bottom:8px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    transition:color .35s ease;
+
+}
+
+.about-quality-item:hover h3{
+
+    color:var(--color-primary);
+
+}
+
+.about-quality-item p{
+
+    color:var(--color-text-secondary);
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+/* ==========================
+   IMAGEM
+========================== */
+
+.about-quality-image{
+
+    position:relative;
+
+    flex:1;
+
+    height:460px;
+
+    overflow:visible;
+
+    opacity:0;
+
+    transform:translateX(60px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+.about-quality.animate .about-quality-image{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.about-quality-image-wrapper{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.about-quality-image img{
+
+    position:absolute;
+
+    width: 800px;
+
+    max-width:none;
+
+    top: -100px;
+
+    right: -100px;
+
+    left:auto;
+
+    bottom:auto;
+
+    display:block;
+
+    user-select:none;
+
+    pointer-events:none;
+
+    -webkit-user-drag:none;
+
+    transition:transform .4s ease;
+
+}
+
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:1024px){
+
+.about-quality{
+
+padding:80px 0;
+
+}
+
+.about-quality-content{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:50px;
+
+}
+
+.about-quality-text{
+
+width:100%;
+
+max-width:700px;
+
+}
+
+.about-quality-item{
+
+justify-content:center;
+
+text-align:left;
+
+}
+
+.about-quality-image{
+
+width:100%;
+
+height:520px;
+
+}
+
+.about-quality-image img{
+
+position:relative;
+
+width:600px;
+
+right:0;
+
+top:0;
+
+margin:auto;
+
+}
+
+}
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.about-quality{
+
+padding: 30px 0;
+
+}
+
+.about-quality-subtitle{
+
+font-size:.85rem;
+
+}
+
+.about-quality-list{
+
+gap:22px;
+
+}
+
+.about-quality-item{
+
+gap:15px;
+
+}
+
+.about-quality-item h3{
+
+font-size:.9rem;
+
+}
+
+.about-quality-item p{
+
+font-size:.8rem;
+
+}
+
+.about-quality-image{
+
+height:auto;
+
+}
+
+.about-quality-image img{
+
+width:110%;
+
+max-width: 540px;
+
+
+}
+
+}
+
+/*==================================================
+CELULARES PEQUENOS
+==================================================*/
+
+@media(max-width:480px){
+
+.about-quality{
+
+padding: 20px 0;
+
+}
+
+.about-quality-text{
+
+text-align:left;
+
+}
+
+.about-quality-item{
+
+align-items:flex-start;
+
+}
+
+.about-quality-item h3{
+
+font-size:.82rem;
+
+}
+
+.about-quality-item p{
+
+font-size:.85rem;
+
+}
+
+.about-quality-image img{
+
+max-width: 420px;
+
+ 
+
+
+
+}
+
+}

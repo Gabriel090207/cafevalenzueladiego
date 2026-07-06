@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 
-import Hero from "../../components/Hero/Hero";
-import AboutCoffee from "../../components/AboutCoffee/AboutCoffee";
-import Offer from "../../components/Offer/Offer";
-import Testimonials from "../../components/Testimonials/Testimonials";
-import Faq from "../../components/Faq/Faq";
-import FeaturesBar from "../../components/FeaturesBar/FeaturesBar";
+import Hero from "../../components/Home/Hero/Hero";
+import AboutCoffee from "../../components/Home/AboutCoffee/AboutCoffee";
+import Offer from "../../components/Home/Offer/Offer";
+import Testimonials from "../../components/Home/Testimonials/Testimonials";
+import Faq from "../../components/Home/Faq/Faq";
+import FeaturesBar from "../../components/Home/FeaturesBar/FeaturesBar";
 
 function Home() {
 
@@ -15,7 +15,7 @@ useEffect(() => {
 
     if (!sectionId) return;
 
-    const timer = setTimeout(() => {
+   requestAnimationFrame(() => {
 
         const section = document.getElementById(sectionId);
 
@@ -30,9 +30,7 @@ useEffect(() => {
 
         sessionStorage.removeItem("scrollToSection");
 
-    }, 150);
-
-    return () => clearTimeout(timer);
+    });
 
 }, []);
 

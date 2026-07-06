@@ -1,12 +1,12 @@
 import "./AboutCoffee.css";
 
-import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
+import useAnimateOnScroll from "../../../hooks/useAnimateOnScroll";
 
-import aboutCoffee from "../../assets/images/about/about-coffee.webp";
+import aboutCoffee from "../../../assets/images/about/about-coffee.webp";
 
-import fireIcon from "../../assets/images/about/icons/fire.webp";
-import balanceIcon from "../../assets/images/about/icons/balance.webp";
-import aromaIcon from "../../assets/images/about/icons/aroma.webp";
+import fireIcon from "../../../assets/images/about/icons/fire.webp";
+import balanceIcon from "../../../assets/images/about/icons/balance.webp";
+import aromaIcon from "../../../assets/images/about/icons/aroma.webp";
 
 const features = [
     {

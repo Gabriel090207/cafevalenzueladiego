@@ -1,5 +1,5 @@
 import "./Testimonials.css";
-import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
+import useAnimateOnScroll from "../../../hooks/useAnimateOnScroll";
 
 
 import { Star } from "lucide-react";

@@ -2,11 +2,11 @@ import { useState } from "react";
 
 
 import "./Faq.css";
-import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
+import useAnimateOnScroll from "../../../hooks/useAnimateOnScroll";
 
 import { ChevronDown } from "lucide-react";
 
-import faqCoffee from "../../assets/images/faq/faq-coffee.webp";
+import faqCoffee from "../../../assets/images/faq/faq-coffee.webp";
 
 
 const questions = [

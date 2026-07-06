@@ -1,10 +1,10 @@
 import "./Offer.css";
-import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
+import useAnimateOnScroll from "../../../hooks/useAnimateOnScroll";
 
 
 import { ShoppingCart, Lock, Check } from "lucide-react";
 
-import offerProduct from "../../assets/images/offer/offer-product.webp";
+import offerProduct from "../../../assets/images/offer/offer-product.webp";
 
 function Offer() {
 

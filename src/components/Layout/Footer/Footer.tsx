@@ -1,6 +1,6 @@
 import "./Footer.css";
 
-import logo from "../../assets/images/hero/logo.webp";
+import logo from "../../../assets/images/hero/logo.webp";
 
 import {
     FaInstagram,

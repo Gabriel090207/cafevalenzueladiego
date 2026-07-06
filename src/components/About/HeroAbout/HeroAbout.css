@@ -1,0 +1,405 @@
+.hero-about{
+
+    background: var(--color-background);
+
+    padding-top:140px;
+
+    overflow:hidden;
+
+}
+
+.hero-about-content{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+}
+
+/* ==========================
+   LADO ESQUERDO
+========================== */
+
+.hero-about-left{
+
+    position:relative;
+
+    width: 540px;
+
+    flex-shrink:0;
+
+    z-index:2;
+
+    top:-135px;
+
+    left:0;
+
+    right:auto;
+
+    bottom:auto;
+
+    animation:fadeLeft 1s ease forwards;
+
+}
+
+.hero-about-logo{
+
+    width:520px;
+
+    margin-bottom:15px;
+
+    margin-left:-50px;
+
+    display:block;
+
+}
+
+.hero-about-title{
+
+    font-family:var(--font-title);
+
+    font-size: 3rem;
+
+    line-height:1.08;
+
+    font-weight:600;
+
+    white-space:pre-line;
+
+    margin-bottom: 12px;
+
+}
+
+.hero-about-title::first-line{
+
+    color:var(--color-text);
+
+}
+
+.hero-about-title{
+
+    color:var(--color-primary);
+
+}
+
+.hero-about-title::first-line{
+
+    color:var(--color-text);
+
+}
+
+.hero-about-description{
+
+    color:var(--color-text-secondary);
+
+    font-size: 0.8rem;
+
+    line-height:1.9;
+
+    max-width:530px;
+
+}
+
+/* ==========================
+   LADO DIREITO
+========================== */
+
+.hero-about-right{
+
+    position:relative;
+
+    flex:1;
+
+    height: 630px;
+
+    overflow:visible;
+
+    animation:fadeRight 1s ease forwards;
+
+}
+
+.hero-about-image-wrapper{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+/* Fade Esquerda */
+
+
+
+/* Fade Direita */
+
+
+
+.hero-about-image{
+
+    position:absolute;
+
+    width: 1020px;
+
+    max-width:none;
+
+    top:-110px;
+
+    right:-210px;
+
+    display:block;
+
+    user-select:none;
+
+    pointer-events:none;
+
+    -webkit-user-drag:none;
+
+    mask-image:linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 8%,
+        black 92%,
+        transparent 100%
+    );
+
+    -webkit-mask-image:linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 8%,
+        black 92%,
+        transparent 100%
+    );
+
+}
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:1024px){
+
+.hero-about{
+
+padding-top:120px;
+
+}
+
+.hero-about-content{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:40px;
+
+}
+
+.hero-about-left{
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    text-align:center;
+
+}
+
+.hero-about-logo{
+
+width:360px;
+
+margin:0 auto 30px;
+
+}
+
+.hero-about-title{
+
+font-size:2.5rem;
+
+}
+
+.hero-about-description{
+
+margin:auto;
+
+}
+
+.hero-about-right{
+
+    width:100%;
+
+    height:auto;
+
+    margin-top:20px;
+
+}
+
+.hero-about-image-wrapper{
+
+    width:100%;
+
+    height:auto;
+
+    max-width:700px;
+
+    margin:0 auto;
+
+}
+
+.hero-about-image{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:900px;
+
+    top: -30px;
+
+    right:0;
+
+    margin:0 auto;
+
+}
+
+}
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.hero-about{
+
+padding-top:110px;
+
+}
+
+.hero-about-title{
+
+font-size:2.2rem;
+
+}
+
+.hero-about-logo{
+
+width:340px;
+
+margin:0 auto 25px;
+
+}
+
+.hero-about-description{
+
+font-size:.95rem;
+
+max-width:330px;
+
+margin:auto;
+
+}
+
+.hero-about-image-wrapper{
+
+max-width:780px;
+
+}
+
+.hero-about-image-wrapper::before,
+
+.hero-about-image-wrapper::after{
+
+width:80px;
+
+}
+
+}
+
+/*==================================================
+CELULARES PEQUENOS
+==================================================*/
+
+@media(max-width:480px){
+
+.hero-about-title{
+
+font-size:2rem;
+
+}
+
+.hero-about-logo{
+
+width:280px;
+
+margin:0 auto 20px;
+
+}
+
+.hero-about-description{
+
+font-size:.9rem;
+
+}
+
+.hero-about-image-wrapper{
+
+max-width:360px;
+
+}
+
+}
+
+/* ==========================
+   ANIMAÇÕES
+========================== */
+
+@keyframes fadeLeft{
+
+from{
+
+opacity:0;
+
+transform:translateX(-60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+@keyframes fadeRight{
+
+from{
+
+opacity:0;
+
+transform:translateX(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}

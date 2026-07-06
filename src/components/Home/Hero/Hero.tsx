@@ -1,7 +1,7 @@
 import "./Hero.css";
 
-import logo from "../../assets/images/hero/logo.webp";
-import heroProduct from "../../assets/images/hero/hero-product.webp";
+import logo from "../../../assets/images/hero/logo.webp";
+import heroProduct from "../../../assets/images/hero/hero-product.webp";
 
 const heroContent = {
     title: "SABOR QUE ENCANTA,\nQUALIDADE QUE VOCÊ SENTE.",
@@ -9,10 +9,10 @@ const heroContent = {
         "Grãos selecionados e torra artesanal para proporcionar a experiência perfeita em cada xícara.",
 };
 
-import coffeeBean from "../../assets/images/icons/coffee-bean.webp";
-import leaf from "../../assets/images/icons/leaf.webp";
-import coffeeCup from "../../assets/images/icons/coffee-cup.webp";
-import mountain from "../../assets/images/icons/mountain.webp";
+import coffeeBean from "../../../assets/images/icons/coffee-bean.webp";
+import leaf from "../../../assets/images/icons/leaf.webp";
+import coffeeCup from "../../../assets/images/icons/coffee-cup.webp";
+import mountain from "../../../assets/images/icons/mountain.webp";
 
 const heroFeatures = [
     {
