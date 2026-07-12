@@ -453,6 +453,14 @@ MOBILE
 
     }
 
+    .hero-left,
+.hero-right,
+.hero-feature {
+
+    animation: none !important;
+
+}
+
 }
 
 /*==================================================
@@ -498,6 +506,14 @@ CELULARES PEQUENOS
         width:30px;
 
     }
+
+    .hero-left,
+.hero-right,
+.hero-feature {
+
+    animation: none !important;
+
+}
 
 }
 
